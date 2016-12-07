@@ -1,0 +1,74 @@
+.main ul.top_ul {
+	width: 100%;
+	list-style: none;
+	margin-top: 35px;
+}
+
+.main ul.top_ul li {
+	width: 80%;
+	margin: 7px auto;
+}
+
+.main ul.top_ul li div {
+	width: 49%;
+	height: 70px;
+	display: inline-block;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	color: white;
+	background: #9999ff;
+}
+
+.border_left_top {
+	border-radius: 10px 0 0 0;
+}
+
+.border_right_top {
+	border-radius: 0 10px 0 0;
+	float: right;
+}
+
+.border_left_bottom {
+	border-radius: 0 0 0 10px
+}
+
+.border_right_bottom {
+	border-radius: 0 0 10px 0;
+	float: right;
+}
+
+.btn {
+	font-size: 20px;
+	color: white;
+	width: 150px;
+	height: 32px;
+	text-align: center;
+	line-height: 28px;
+	margin: 0 auto;
+	background: #2A3B55;
+	margin-top: 90px;
+	border-radius: 4px;
+}
+
+.info_people {
+	list-style: none;
+	margin-top: 35px;
+}
+
+.info_people li {
+	width: 100%;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+.info_people li span {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	height:40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

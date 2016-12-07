@@ -1,0 +1,165 @@
+html{color:#000;background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote{margin:0;padding:0;}
+body{
+
+background-color: #f5f5f5;	font:12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;}
+img{border:none;}
+em,strong{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+h3{font-size:14px;}
+h4, h5, h6{font-size:100%;}
+
+q:before,q:after{content:'';}/* 消除q前后的内容 */
+button,input,select,textarea{font-size:100%;}/* 使得表单元素在 ie 下能继承字体大小 */
+input,button,textarea,select,optgroup{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+address,cite,dfn,em,var{font-style:normal;}  
+
+tr,td{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	text-align: center;
+}
+tbody{
+	border: 0px;
+}
+option{
+	text-align: center !important;
+}
+.head{
+	width: 100%;
+	height: 10em;
+	background-color: #fff;
+
+}
+.head1{
+	margin: auto;
+	width: 90%;
+	
+}
+.logo{
+	float: left;
+	width: 18em;
+}
+.logo img{width: 100%;}
+.tou{
+    font-size: 3em;
+    float: right;
+    line-height: 3;
+    font-family: 微软雅黑;
+}
+.table-wap{
+	margin-bottom: 18em;
+	width: 100%;
+	
+}
+
+.table-wap td{
+	height: 2em;
+font-family: 微软雅黑;
+font-size: 3em;
+border:1px solid #ccc;
+	width: 25%;}
+	.table-wap tr td:first-child{
+		width: 20%;
+	}
+	.table-wap tr td:nth-child(2){
+		width: 18%;
+	}
+	.table-wap tr:first-child td:nth-child(3){
+		font-size: 3em;
+	}
+	.table-wap tr td:nth-child(3){
+		font-size: 2.5em;
+	}
+	.table-wap tr td:nth-child(4){
+		font-size: 2.5em;
+	}
+.tail{
+	text-align: center;
+
+	position: fixed;
+	height: 18vw;
+	width: 100%;
+	bottom: 0;
+}
+.yuan{
+	width: 15vw;
+    height: 15vw;
+
+    -moz-border-radius: 30vw;
+    -webkit-border-radius: 30vw;
+    border-radius: 15vw;
+    font-size: 3em;
+}
+.yuan2{
+	width: 15vw;
+    height: 15vw;
+
+    -moz-border-radius: 30vw;
+    -webkit-border-radius: 30vw;
+    border-radius: 15vw;
+    font-size: 3em;
+}
+.tail2{
+	text-align: center;
+
+	position: fixed;
+	height: 18vw;
+	width: 100%;
+	bottom: 0;
+}
+.tanchu{
+
+
+text-align: center;
+	z-index: 2;
+	height: 50%;
+	bottom:-50%;
+box-shadow: 0 -7px 30px #888;
+	background-color: #fff;
+	width: 100%;
+}
+.tanchu input{
+    border: 1px solid;
+margin-top: 1em;
+
+	width: 80%;
+height: 2em;
+font-size:3em;}
+.tanchu select{
+	    border: 1px solid;
+	width: 80%;
+	margin-top: 1em;
+	height: 2em;
+	font-size: 3em;
+}
+.kongbai{
+	display: none;
+	width: 100%;
+	height: 50%;
+	top:0;
+	
+	position: fixed;
+}
+.pagination{
+
+	margin:auto;
+}
+.pagee{
+	margin-top: -32vw;
+	width: 100%;
+	text-align: center;
+}
+.pagee a{
+	font-size: 3.2em;
+
+}
+.liubai{
+	height: 10vw;
+}
+.active a{
+	z-index: 1 !important;
+}

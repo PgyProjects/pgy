@@ -1,0 +1,104 @@
+.main ul{
+	padding-top: 30px;
+}
+.firstLi{
+	font-size:16px;
+	text-align: center;
+}
+.firstLi span{
+	color: #ff6400;
+}
+.edu{
+	margin-top:10px;
+}
+.edu_indx{
+	width:300px;
+	height:200px;
+	margin: 0 auto;
+	border-radius: 10px 10px 0 0;
+	background: #9999ff;
+}
+.edu_indx .moneyNum{
+	font-size:32px;
+	/*display: block;*/
+	text-align: center;
+	color:white;
+	padding-top: 60px;
+}
+.edu_indx .tishi{
+	text-align: center;
+	color: white;
+	margin-top: 45px;
+}
+.edu_indx .tishi img{
+	display: inline-block;
+	width:14px;
+	margin-right: 1px;
+	position: relative;
+	top: 2px;
+}
+.edu_indx .tishi p{
+	display: inline-block;
+	font-size: 14px;
+}
+.thirdLi{
+	margin-top:6px;
+}
+.divMain{
+	width: 300px;
+	margin: 0 auto;
+}
+.divMain_left,.divMain_right{
+	display: inline-block;
+	background: #9999ff;
+	width:147px;
+	height:90px;
+}
+.divMain_left{
+	border-radius: 0 0 0 10px;
+}
+.divMain_right{
+	float: right;
+	border-radius: 0 0 10px 0;
+}
+.divMain_left span,.divMain_right span{
+	display: block;
+	text-align: center;
+	color:white;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.divMain_left .num,.divMain_right .num{
+	font-size: 24px;
+	margin-top:15px;
+}
+.lastLi{
+	margin-top:20px;
+}
+.divLast{
+	width:75%;
+	height:100px;
+	position: relative;
+	margin: 0 auto;
+}
+.divLast img{
+	width:100%;
+}
+.btn{
+	width: 100px;
+	height:100px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0px;
+	left:32%;
+}
+.btn span{
+	font-size:20px ;
+	color: white;
+	position: absolute;
+	top:38px;
+	left:10px;
+}
+.colorE4{
+	color: #ffe400;
+}

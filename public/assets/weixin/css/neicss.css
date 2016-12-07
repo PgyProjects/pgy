@@ -1,0 +1,142 @@
+/*html{color:#000;background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote{margin:0;padding:0;}
+body{
+
+background-color: #f5f5f5;	font:12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;}
+img{border:none;}
+em,strong{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+h3{font-size:14px;}
+h4, h5, h6{font-size:100%;}
+
+button,input,select,textarea{font-size:100%;}
+input,button,textarea,select,optgroup{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+address,cite,dfn,em,var{font-style:normal;}  
+
+tr,td{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	text-align: center;
+}
+tbody{
+	border: 0px;
+}
+option{
+	text-align: center !important;
+}
+*/
+p,a{
+	font-family:微软雅黑;}
+.head span{
+	font-family: 微软雅黑;
+	font-weight: bold;
+	font-size:5vw;
+	line-height:2.5;
+}
+.head2{
+	text-align: center;
+	background-color: #094;
+	height:10vw;
+}
+.head2 span{
+	text-align: center;
+	font-size: 5vw;
+	line-height:2;
+	color:#fff;
+font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+.main{	
+	
+}
+.tishi{
+	    margin: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 3.7vw;
+    border-bottom: dotted #CCC 2px;
+    line-height: 2;
+    font-family: 微软雅黑;
+    color: #666;
+}
+
+.container, .page{position: relative !important;}
+.t1{
+	    border-bottom: dotted #CCC 2px;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 微软雅黑;
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+    color: #666;
+}
+.kongbai1{
+	background-color: #f8f8f8;
+	height: 11vw;
+}
+.kongbai2{
+    background-color: #f8f8f8;
+    height: 3vw;
+}
+.jinggao{
+	    height: 32vw;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255,192,203,0.6);
+    border-radius: 15px;
+    margin-top: 10vw;
+}
+.jinggao p{
+    padding: 5vw;
+
+    font-family: 微软雅黑;
+    color: #333;
+}
+.daoshu{
+	    margin: 0 auto;
+    width: 92%;
+    padding-top: 2vw;
+    color: #666;
+}
+.tishi2{
+	text-indent: 5vw;
+    margin: auto;
+    width: 90%;
+    font-size: 4.5vw;
+    border-bottom: dotted #CCC 2px;
+    line-height: 2;
+
+    color: #666;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+#yzm{
+text-indent: 6vw;
+}
+.sjcg{
+	width: 100%;
+	height: 70%;
+}
+.sjcgmain{
+	    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20vw;
+}
+.jg-blue{
+	font-weight: bold;
+	    color: #4169e1;
+    background-color: rgba(135,206,235,0.6);
+    font-size: 4vw;
+    text-align: center;
+    width: 90%;
+    margin: 3vw auto;
+    border-radius: 10px;
+    padding: 2vw;
+}
+

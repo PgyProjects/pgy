@@ -1,0 +1,91 @@
+ul{
+	padding-left: 0;
+}
+.header{
+	background: #f39c11 !important;
+}
+.bgBtn{
+	background: #3c8dbc;
+}
+.oTable{
+	width:68%;
+	margin-right: 10vw;
+}
+.tubiao-box{
+	width: 67%;
+	margin-right: 10vw;
+	margin: 0 auto;
+    margin-top: 60px;
+        overflow-x: hidden;
+    min-height: 0.01%;
+}
+.list-left{
+	    float: left;
+    width: 9vw;
+    height: 20vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+.list-left li{
+	cursor: pointer;
+	color: #fff;
+	font-size: 1vw;
+	      margin-bottom: 2.4vw;
+    background: #ccc;
+    text-align: center;
+    height: 2vw;
+    line-height: 2vw;
+    border-radius: 10px;
+}
+.current{
+	background: #3c8dbc !important;
+}
+.main .main_top li{
+	width: 20%;
+}
+#biaoge{display: block;}
+#container{
+	display: none;
+}
+.border-right-tubiao{
+	border-right:  2px solid #3c8dbc;
+
+}
+.dropdown-menu li a{
+	cursor: pointer;
+}
+.dropdown{
+	float: left;
+	margin-right: 0.5vw;
+}
+.dropdown-menu{
+	min-width: 120px;
+}
+.dropdown-menu > li > a{
+	text-align: center;
+}
+.left-select{
+	display: none;
+	left: 7vw;
+	top: 4.8vw;
+	position: relative;
+	}
+.tanchu-zhezhao{
+	z-index: 999;
+    background: rgba(0,0,0,0.7);
+	position: absolute;
+    width: 100%;
+}
+.tanchu-mg{
+	    border-radius: 20px;
+    background: #fff;
+    width: 16%;
+    height: 20vw;
+        margin: 19% auto;
+}
+.tanchu-bd{
+	text-align: center;
+	width: 80%;
+	margin:auto;
+}
+.highcharts-button{display: none;}

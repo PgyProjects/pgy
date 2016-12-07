@@ -1,0 +1,66 @@
+body{
+	background-image: url(../img/11.png);
+}
+.head{
+	width: 100%;
+	height: 18vw;
+	
+}
+.head span{
+	margin-top: 6vw;
+	display: block;
+	font-size:6vw;
+	font-family: 微软雅黑;
+	color: #000;
+	text-align: center;
+}
+.a1{
+
+	    position: absolute;
+    padding-top: 25%;
+    margin: auto;
+    width: 100%;
+
+	
+}
+
+.a1 ul{
+	padding: 0;
+}
+.a1 li{
+        list-style: none;
+    margin-bottom: 10%;
+    width: 22%;
+margin:auto;
+}
+.a1 li img{
+width: 100%;}
+
+
+.shenhe p{
+	    font-size: 4vw;
+    text-align: center;
+}
+
+.a2{
+
+	    position: absolute;
+    padding-top: 25%;
+    margin: auto;
+    width: 100%;
+	
+	
+}
+.a2 ul{padding: 0}
+.a2 li{
+       list-style: none;
+    margin-bottom: 10%;
+    width: 22%;
+    margin-left: 19%;
+    float: left;
+}
+.a2 li img{
+width: 100%;
+	/*-webkit-border-radius: 25px;
+box-shadow: 0 4px 3px -2px rgba(100, 100, 100, 1);*/
+}

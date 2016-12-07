@@ -1,0 +1,187 @@
+<script type="text/javascript">
+	$.ajax({                //拿管理员
+					type: 'post',
+					url: "test.pgyxwd.com/testing", 
+					dataType: 'json',
+					async: true, 
+					success: function(result) {
+						var list = result.guanliyuan;
+						var optionstring = "";
+						for(var j = 0; j < list.length; j++) {
+							optionstring += "<option value=" + list[j].username + " >" + list[j].xingming + "</option>";
+						}
+						$("#manager").html("<option value='请选择'>请选择</option> " + optionstring);
+						khjl(); 
+						$("#manager").val('admin'); 
+					},
+					error: function(result) {}
+				})
+	
+	
+			function khjl() {  //进入的时候加载的
+				var name = 'admin';
+				var year = $('#year1').val();
+				var dizhi = '';
+				dizhi = "<?php echo site_url('admin_zong/guanli_n_y_ajax?username=')?>" + name + '&' + 'nian=' + year
+				$.ajax({
+					type: 'post',
+					url: dizhi, //发送后台的url 
+					dataType: 'json',
+					async: true, //异步状态 在ajax执行的同时会执行其他js
+					success: function(result) {
+
+						var jineArr = new Array();
+						var monthArr = new Array();
+						var renArr = new Array();
+						var yuqiArr = new Array();
+						var zongrenshuArr = new Array();
+						for(var i = 0; i < 12; i++) {
+							jineArr[i] = result.jine[i];
+							renArr[i] = result.ren[i];
+							monthArr[i] = result.yue[i];
+							zongrenshuArr[i] = result.zongrenshu[i];
+							yuqiArr[i] = result.yuqi[i];
+
+						}
+						biao1(renArr, monthArr, jineArr);
+						biao2(yuqiArr);
+						biao3(renArr, monthArr, zongrenshuArr);
+						$('.alldt span').html('总客户数:' + result.renshu);
+						//把人数数组和月数组参数传给方法nian
+					},
+					error: function(result) {}
+				})
+				doajax();
+
+			}
+			
+			
+			
+			function doajax() { //管理员改变触发
+
+				$('#manager').change(function() {
+
+					var year = $('#year1').val();
+					var month = $('#month1').val();
+					var name = $(this).val();
+
+					var dizhi = '';
+					if(month == '0') {
+						dizhi = "<?php echo site_url('admin_zong/guanli_n_y_ajax?username=')?>" + name + '&' + 'nian=' + year
+					} else {
+						dizhi = "<?php echo site_url('admin_zong/guanli_n_y_ajax?username=')?>" + name + '&' + 'nian=' + year + '&' + 'yue=' + month
+
+					}
+					$.ajax({
+						type: 'post',
+						url: dizhi, //发送后台的url 
+						dataType: 'json',
+						async: true, //异步状态 在ajax执行的同时会执行其他js
+						success: function(result) {
+
+							if(month != '0') {
+								var riArr = new Array();
+								var renArr = new Array();
+								var jineArr = new Array();
+								var yuqiArr = new Array();
+								var zongrenshuArr = new Array();
+								for(var i = 0; i < result.ri.length; i++) {
+									renArr[i] = result.ren[i];
+									riArr[i] = result.ri[i];
+									jineArr[i] = result.jine[i];
+									yuqiArr[i] = result.yuqi[i];
+									zongrenshuArr[i] = result.zongrenshu[i];
+								}
+								biao1(renArr, riArr, jineArr); //新增表
+								biao2(yuqiArr); //
+								biao3(renArr, riArr, zongrenshuArr); //通过数表
+								$('.alldt span').html('总客户数:' + result.renshu);
+
+							} else {
+								var jineArr = new Array();
+								var monthArr = new Array();
+								var renArr = new Array();
+								var zongrenshuArr = new Array();
+								var yuqiArr = new Array();
+								for(var i = 0; i < 12; i++) {
+									jineArr[i] = result.jine[i];
+									renArr[i] = result.ren[i];
+									monthArr[i] = result.yue[i];
+									yuqiArr[i] = result.yuqi[i];
+									zongrenshuArr[i] = result.zongrenshu[i];
+
+								}
+								biao1(renArr, monthArr, jineArr);
+								biao2(yuqiArr);
+								biao3(renArr, monthArr, zongrenshuArr); //通过数表
+								$('.alldt span').html('总客户数:' + result.renshu);
+							}
+							//把人数数组和月数组参数传给方法nian
+						},
+						error: function(result) {}
+					})
+				})
+				
+				
+				
+				$('#month1').change(function() {  //月份的改变
+					var year = $('#year1').val();
+					var name = $('#manager').val();
+					var month = $(this).val();
+					var dizhi = '';
+					if(month == '0') {
+						dizhi = "<?php echo site_url('admin_zong/guanli_n_y_ajax?username=')?>" + name + '&' + 'nian=' + year
+					} else {
+						dizhi = "<?php echo site_url('admin_zong/guanli_n_y_ajax?username=')?>" + name + '&' + 'nian=' + year + '&' + 'yue=' + month
+					}
+					$.ajax({
+						type: 'post',
+						url: dizhi, //发送后台的url 
+						dataType: 'json',
+						async: true, //异步状态 在ajax执行的同时会执行其他js
+						success: function(result) {
+
+							if(month != '0') {
+								var riArr = new Array();
+								var renArr = new Array();
+								var jineArr = new Array();
+								var zongrenshuArr = new Array();
+								for(var i = 0; i < 31; i++) {
+									renArr[i] = result.ren[i];
+									riArr[i] = result.ri[i];
+									jineArr[i] = result.jine[i];
+									zongrenshuArr[i] = result.zongrenshu[i];
+								}
+								biao1(renArr, riArr, jineArr);
+								biao3(renArr, riArr, zongrenshuArr);
+								$('.alldt span').html('总客户数:' + result.renshu);
+							} else {
+								var jineArr = new Array();
+								var monthArr = new Array();
+								var renArr = new Array();
+								var zongrenshuArr = new Array();
+								for(var i = 0; i < 12; i++) {
+									jineArr[i] = result.jine[i];
+									renArr[i] = result.ren[i];
+									monthArr[i] = result.yue[i];
+									zongrenshuArr[i] = result.zongrenshu[i];
+
+								}
+								biao1(renArr, monthArr, jineArr);
+								biao2(renArr, riArr, zongrenshuArr);
+								biao3(renArr, monthArr, zongrenshuArr);
+								$('.alldt span').html('总客户数:' + result.renshu);
+							}
+							//把人数数组和月数组参数传给方法nian
+						},
+						error: function(result) {}
+					})
+				})
+
+			}
+</script>
+
+
+<li role="presentation">
+							<a role="menuitem" tabindex="-1" >管理员1</a>
+						</li>

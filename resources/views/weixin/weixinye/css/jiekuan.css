@@ -1,0 +1,71 @@
+.click-jkjl{
+	    position: relative;
+    font-size: 5.5vw;
+    width: 65vw;
+    height: 9vw;
+    line-height: 9vw;
+    text-align: center;
+    background: #64a5f9;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    top: 10vw;
+    padding: 1vw;
+}
+.jilubiao{
+	    height: 105vw;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 20vw;
+	 
+}
+.jilubiao img{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	}
+.jilubiao h2{
+	width: 100%;
+    top: 26vw;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    font-size: 5vw;
+}
+.jk1-1{
+	    padding-left: 15vw;
+    font-size: 5vw;
+    position: absolute;
+    top: 42vw;
+    z-index: 999;
+}
+.jk1-1 p{
+	    float: left;
+    padding-right: 10vw;
+}
+.jk1-2{
+	 padding-left: 15vw;
+    font-size: 5vw;
+    position: absolute;
+    top: 55vw;
+    z-index: 999;
+}
+.jk1-2 p{
+	    float: left;
+    padding-right: 15vw;
+}
+.click-jk{
+	       width: 30vw;
+    height: 30vw;
+    margin: auto;
+    top: 64vw;
+    position: relative;
+	
+}
+.click-jk p{    font-size: 5vw;
+    position: relative;
+    z-index: 999;
+    top: 12vw;
+    color: #fff;
+    padding-left: 5vw;}
